@@ -22,7 +22,7 @@ const ToggleButton = styled.button`
   align-items: center;
   transition: font-size 1s;
   @media (min-width: 800px) {
-    font-size: 30px;
+    font-size: 27px;
   }
 `;
 

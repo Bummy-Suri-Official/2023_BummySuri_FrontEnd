@@ -5,11 +5,6 @@ import Logo from "../components/Logo";
 import AboutKlip from "../components/Login/AboutKlip";
 import KlipBtn from "../components/Login/KlipApi";
 
-//추후 삭제
-import SideBar from "../components/SideBar/SideBar";
-import SideBarContents from "../components/SideBar/SideBarContents";
-
-
 const Total = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -71,9 +66,7 @@ const Login = () => {
     <Total style={{ minHeight: `${totalHeight}px` }}>
       <Logo/>
 
-      <SideBar>
-        <SideBarContents/>
-      </SideBar> {/*추후 삭제*/}
+
 
       <Intro>
         <Red>Bummy</Red>&<Blue>Suri</Blue> 프로젝트는<br/> 클립과 함께 합니다.

@@ -7,7 +7,10 @@ import bummyimage from '../assets/bummy.png';
 import suriimage from '../assets/suri.png';
 
 import Carousel from "../components/Lending/Carousel";
-import CarouselBenefit from "../components/Lending/CarouselBenefit";
+
+import SideBar from "../components/SideBar/SideBar";
+import SideBarContents from "../components/SideBar/SideBarContents";
+
 
 
 const Minting = () => {
@@ -19,6 +22,9 @@ const Minting = () => {
   return (
     <>
       <Container>
+        <SideBar>
+          <SideBarContents/>
+        </SideBar> 
         <BummySuriTitle />
         <KoYonDiv>2023 KO-YON Collection</KoYonDiv>
         <MintButton>Mint!</MintButton>
