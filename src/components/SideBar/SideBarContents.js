@@ -72,7 +72,7 @@ const SideBarContents = ()=> {
     return (
       <Total>
         <NFTImage src=""></NFTImage>
-        <Address>지갑주소 <p style={{fontSize:"8px"}}>{userAddress}</p> </Address>
+        <Address>지갑주소(수정) <p style={{fontSize:"8px"}}>{userAddress}</p> </Address>
         <Point>보유 포인트</Point>
         <PointScore>1000P(수정)</PointScore>
         

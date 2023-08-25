@@ -5,6 +5,7 @@ import Logo from "../components/Logo";
 import AboutKlip from "../components/Login/AboutKlip";
 import KlipBtn from "../components/Login/KlipApi";
 
+
 const Total = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -62,19 +63,20 @@ const Login = () => {
     };
   }, []);
 
+  
   return (
-    <Total style={{ minHeight: `${totalHeight}px` }}>
-      <Logo/>
+      <Total style={{ minHeight: `${totalHeight}px` }}>
+        <Logo/>
 
 
 
-      <Intro>
-        <Red>Bummy</Red>&<Blue>Suri</Blue> 프로젝트는<br/> 클립과 함께 합니다.
-      </Intro>
-      <Bummysuri/>
-      <AboutKlip/>
-      <KlipBtn/>
-    </Total>
+        <Intro>
+          <Red>Bummy</Red>&<Blue>Suri</Blue> 프로젝트는<br/> 클립과 함께 합니다.
+        </Intro>
+        <Bummysuri/>
+        <AboutKlip/>
+        <KlipBtn/>
+      </Total>
   );
 }
 

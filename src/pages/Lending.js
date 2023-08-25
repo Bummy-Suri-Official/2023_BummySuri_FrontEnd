@@ -106,6 +106,7 @@ const BTN = styled.button`
   width: 320px;
   height: 51px;
   border-radius: 15px;
+  border: none;
   font-family: "Inter_Bold";
   font-size: 15px;
   font-weight: 800;
