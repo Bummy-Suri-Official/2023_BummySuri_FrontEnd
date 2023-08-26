@@ -15,7 +15,7 @@ const MainLogo = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 59px;
-  font-family: "Inter_Bold";
+  font-family: "Pretendard-Bold";
 `;
 
 const Logo = ()=> {

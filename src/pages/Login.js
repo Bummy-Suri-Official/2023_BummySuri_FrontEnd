@@ -67,9 +67,6 @@ const Login = () => {
   return (
       <Total style={{ minHeight: `${totalHeight}px` }}>
         <Logo/>
-
-
-
         <Intro>
           <Red>Bummy</Red>&<Blue>Suri</Blue> 프로젝트는<br/> 클립과 함께 합니다.
         </Intro>

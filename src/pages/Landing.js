@@ -25,7 +25,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  font-family: "NanumSquare_acR";
 `;
 
 const SubContainer = styled.div`
@@ -101,14 +100,13 @@ const Benefit02 = styled.div`
 `;
 
 const BTN = styled.button`
-  background-color: rgba(197, 101, 231, 1);
+  background-color: #7000FF;
   margin: 30px auto;
-  width: 320px;
+  width: 325px;
   height: 51px;
   border-radius: 15px;
   border: none;
-  font-family: "Inter_Bold";
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 800;
   line-height: 22px;
   @media (min-width: 768px) {

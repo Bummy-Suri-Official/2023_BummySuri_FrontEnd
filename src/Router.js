@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Lending from "./pages/Lending";
+import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Minting from "./pages/Minting";
 import { AnimatePresence } from "framer-motion";
@@ -10,7 +10,7 @@ function DefaultRouter () {
       <Router>
         <AnimatePresence>
           <Routes>
-            <Route path="/" element={<Lending />} />
+            <Route path="/" element={<Landing />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Minting" element={<Minting />} />
           </Routes>
