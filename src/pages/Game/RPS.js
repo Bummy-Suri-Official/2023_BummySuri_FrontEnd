@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 import Logo from '../../components/Logo';
 import RpsImage from "../../assets/Game/Rps.png";
-import Popup from "./Popup";
+import PopupWin from "./RPSWin";
+import PopupLose from "./RPSLose";
 
 import SideBar from "../../components/SideBar/SideBar";
 import SideBarContents from "../../components/SideBar/SideBarContents";
@@ -77,9 +78,10 @@ const MyResult = styled.div`
   font-family: "Pretendard-Bold";
 `
 
-const CenteredChoice = styled.div`
+const RpsResult= styled.div`
 
 `;
+
 
 
 const Rps = () => {
@@ -100,17 +102,16 @@ const Rps = () => {
             const randomIndex = Math.floor(Math.random() * 3);
             const computerChoice = choices[randomIndex];
 
-            if (selectedChoice === computerChoice) {
-                setResult("비겼습니다!");
-            } else if (
+            if (
                 (selectedChoice === "가위" && computerChoice === "보") ||
                 (selectedChoice === "바위" && computerChoice === "가위") ||
                 (selectedChoice === "보" && computerChoice === "바위")
             ) {
-                setResult("이겼습니다!");
+                setResult(<PopupWin/>);
             } else {
-                setResult("졌습니다!");
-            }            
+                setResult(<PopupLose/>);
+            }         
+            
         }
     }
 
@@ -137,11 +138,11 @@ const Rps = () => {
             </ButtonContainer>
         )}
 
-        <CenteredChoice>
+        <RpsResult>
             {selectedChoice && !showChoices && (
                 <MyResult>{selectedChoice}</MyResult>
             )}
-        </CenteredChoice>
+        </RpsResult>
 
         {showChoices && (
             <ConfirmButton onClick={handleConfirmClick}>확인</ConfirmButton>
@@ -149,8 +150,8 @@ const Rps = () => {
 
         {!showChoices && (
             <>
-              {result}<br/>
-              <ConfirmButton onClick={handleRestartClick}>한번 더!</ConfirmButton>
+              {result}
+              <ConfirmButton onClick={handleRestartClick} style={{zIndex:"1000"}}>한번 더!</ConfirmButton>
             </>
         )}
     </Background>
