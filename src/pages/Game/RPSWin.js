@@ -23,7 +23,8 @@ const ModalContent = styled.div`
     font-size: 25px;
 `;
 
-const Popup = ({ result, onClose }) => {
+const Popup = () => {
+
     return (
         <PopupContainer>
             <ModalContent>

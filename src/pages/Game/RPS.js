@@ -8,9 +8,10 @@ import PopupLose from "./RPSLose";
 import SideBar from "../../components/SideBar/SideBar";
 import SideBarContents from "../../components/SideBar/SideBarContents";
 
+
 const Background = styled.div`
-    max-width: 100%;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-color: #1D1D1D;
     color: #FFFFFF;
     display: flex;
@@ -57,6 +58,7 @@ const ConfirmButton = styled.button`
     width: 224px;
     height: 60px;
     margin-top: 43px;
+    margin-bottom: 79px;
     font-size: 25px;
     cursor: pointer;
     border-radius: 14px;
