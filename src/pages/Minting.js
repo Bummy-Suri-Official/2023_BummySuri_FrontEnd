@@ -5,11 +5,6 @@ import CountDown from '../components/Minting/CountDown';
 import bummyimage from '../assets/bummy.png';
 import suriimage from '../assets/suri.png';
 
-import Carousel from '../components/Landing/Carousel';
-
-import SideBar from '../components/SideBar/SideBar';
-import SideBarContents from '../components/SideBar/SideBarContents';
-
 
 
 const Minting = () => {
@@ -43,7 +38,7 @@ const Minting = () => {
     font-weight: 800;
     margin-top: 35px;
     margin-left: 10px;
-    font-family: "NanumSquare_acR";
+    font-family: 'Inter';
   `;
 
   const KoYonDivRed = styled.div`
@@ -53,7 +48,7 @@ const Minting = () => {
     font-weight: 800;
     margin-top: 35px;
     margin-left: 10px;
-    font-family: "NanumSquare_acR";
+    font-family: 'Inter';
   `;
 
   const KoYonDivBlue = styled.div`
@@ -63,7 +58,7 @@ const Minting = () => {
     font-weight: 800;
     margin-top: 35px;
     margin-left: 10px;
-    font-family: "NanumSquare_acR";
+    font-family: 'Inter';
   `;
 
   const NewEventDiv = styled.div`
@@ -96,7 +91,6 @@ const Minting = () => {
     font-size: 35px;
     font-weight: 700;
     margin-top: 15px;
-    border: none;
   `;
 
   const NFTCountDiv = styled.div`
@@ -185,7 +179,6 @@ const Minting = () => {
   return (
     <>
       <Container>
-      <SideBar><SideBarContents/></SideBar>
         <BummySuriTitle />
         <KoYonDiv>
           <KoYonDivWhite>2023</KoYonDivWhite>
@@ -196,9 +189,7 @@ const Minting = () => {
         </KoYonDiv>
         <CountDown targetDate={targetDate} />
         <NewEventDiv>NFT EVENT!</NewEventDiv>
-        <CarouselBox>
-          <Carousel />
-        </CarouselBox>
+
         <MintButton>Mint!</MintButton>
         <NFTCountDiv>
           <ImageGraphDiv>
